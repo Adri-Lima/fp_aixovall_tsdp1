@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.search-container {
+    margin: 20px 0;
+}
+
+input {
+    padding: 10px;
+    width: 300px;
+    font-size: 1em;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #17a74b;
+}
+
+#results {
+    margin-top: 20px;
+}
+
+.song {
+    display: flex;
+    align-items: center;
+    background-color: #282828;
+    padding: 10px;
+    margin: 10px auto;
+    width: 80%;
+    border-radius: 10px;
+}
+
+.song img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.song-info {
+    text-align: left;
+}

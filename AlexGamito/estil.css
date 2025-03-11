@@ -1,0 +1,85 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Título estilo Spotify */
+.spotify-title {
+    font-size: 3rem;
+    color: #1DB954;
+    margin: 2rem 0;
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+
+/* Contenedor del buscador */
+.search-container {
+    background-color: #181818;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Caja de búsqueda */
+.search-box {
+    display: flex;
+    gap: 10px;
+}
+
+/* Input de búsqueda */
+.search-input {
+    flex: 1;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: #282828;
+    color: white;
+    outline: none;
+}
+
+.search-input:focus {
+    background-color: #383838;
+}
+
+/* Botón de búsqueda */
+.search-button {
+    background-color: #1DB954;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #1ED760;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .search-container {
+        padding: 1.5rem;
+    }
+    
+    .search-box {
+        flex-direction: column;
+    }
+    
+    .search-button {
+        width: 100%;
+    }
+}

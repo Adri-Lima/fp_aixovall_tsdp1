@@ -1,15 +1,14 @@
-const clientId = '7b494704a577424bbea360c81944d53f';
-const clientSecret = '9922d861e8854814a2a1ebe4a15c95dc';
-const button = document.getElementById("buttonBuscar");
-const input = document.getElementById("search");
-
+const CLIENT_ID='c2ad313723324b3c8fdf18415f86be9b';
+const CLIENT_SECRET='3fcc1efc757645238d0f75b71b2a2ba6';
+const boto=document.getElementById('searchButton');
+const input=document.getElementById('search');
 async function getAccessToken() {
     try {
     const response = await fetch('https://accounts.spotify.com/api/token', {
     method: 'POST',
     headers: {
     'Content-Type': 'application/x-www-form-urlencoded',
-    'Authorization': 'Basic ' + btoa(clientId + ':' + clientSecret)
+    'Authorization': 'Basic ' + btoa(CLIENT_ID + ':' + CLIENT_SECRET)
     },
     body: 'grant_type=client_credentials'
     });
@@ -19,6 +18,6 @@ async function getAccessToken() {
     } catch (error) {
     console.error('Error:', error);
     }
-}
-
-console.log(getAccessToken());
+    }
+const token = await getAccessToken();
+console.log(token);
