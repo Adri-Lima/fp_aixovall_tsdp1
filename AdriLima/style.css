@@ -1,0 +1,38 @@
+html{
+    background-color: #121212;
+}
+
+.Titol{
+    color: #1ed760;
+    font-size: 50px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.contenidor{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+}
+#searchInput{
+    padding: 10px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.botoInici{
+    padding: 18px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: #1ed760;
+}
+
+.botoInici:hover{
+    background-color: #1ab751;
+}
