@@ -12,7 +12,7 @@ const clientSecret = 'f1125ec1d98042c7a30f76e1859a9729';
  });  
  const data = await response.json();  
  if (!response.ok) throw new Error(data.error || 'Error obteniendo el token');  
- return data.access_token;  
+ return data.access_token;   
  } catch (error) {  
  console.error('Error:', error);
  }  
